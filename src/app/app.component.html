@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-12 p-5">
+    <h1 class="text-center">Angular 2 App</h1>
+    <label>Username</label>
+    <input class="form-control" [(ngModel)]="userName" />
+    <p>{{ userName }}</p>
+    <button class="btn btn-primary" [disabled]="userName ===  ''" (click)="userName=''">Reset User</button>
+  </div>
+</div>
